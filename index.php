@@ -11,21 +11,23 @@ if ( isset($_POST['logout']) ) {
 }
 
 ?>
-
+<!DOCTYPE html>
 <html>
 <head>
 <title>Siniuc Robert-Valentin</title>
 
-<link rel="stylesheet" href="index-style.css">
+<link  rel="stylesheet" href="index-style.css" type="text/css">
 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+<link  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 
 </head><body>
 <h1>Bob's Resume Registry</h1>
+<div>
 <a href="login.php">Please log in</a>
+</div>
 <?php
 if ( isset($_SESSION['error']) ) {
     echo '<p style="color:red">'.$_SESSION['error']."</p>\n";
