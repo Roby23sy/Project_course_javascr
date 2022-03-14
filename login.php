@@ -76,14 +76,14 @@ $failure = false;  // If we have no POST data
 <?php require_once "bootstrap.php"; ?>
 <title>Siniuc Robert-Valentin</title>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
- <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="login.css">
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ <link  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 
 </head>
 <body>
 <div class="container">
-<h1>Please Log In</h1>
+<h1>Please Log In </h1>
 
 <?php
     if ( isset($_SESSION['error']) ) {
@@ -97,16 +97,13 @@ $failure = false;  // If we have no POST data
 <input type="text" name="email" id="nam"><br/>
 <label for="id_1723">Password</label>
 <input type="password" name="pass" id="id_1723"><br/>
-<input type="submit" onclick="return doValidate();" value="Log In">
-<input type="submit" name="cancel" value="Cancel">
+<input class="button" type="submit" onclick="return doValidate();" value="Log In">
+<input class="button" type="submit" name="cancel" value="Cancel">
 </form>
-<p>
-
-For a password hint, view source and find a password hint
-in the HTML comments.
-<!-- Hint: The password is the four character sound a cat
-makes (all lower case) followed by 123. -->
-</p>
+<div class="secret">
+ <p>email: umsi@umich.edu</p>
+ <p>pass: php123</p>
+</div>
 
 <script>
 function doValidate() {
